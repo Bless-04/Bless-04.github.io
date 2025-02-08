@@ -1,30 +1,17 @@
 {
-  
-  "name": "three-demo",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "deploy": "gh-pages -d dist",
-  "devDependencies": {
-    "vite": "^6.0.11"
-  },
-  "dependencies": {
-    "three": "^0.128.0",
-    "three.js": "^0.77.0"
-  },
-  "description": "- Watch the [full tutorial](https://youtu.be/Q7AOvWpIVHU) on YouTube\r - [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet",
-  "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bless-04/Bless-04.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bless-04/Bless-04.github.io/issues"
-  },
-  "homepage": "https://github.com/Bless-04/Bless-04.github.io#readme"
+	"name": "three-demo",
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"vite": "^2.3.0"
+	},
+	"dependencies": {
+		"gh-pages": "^6.3.0",
+		"three": "^0.128.0"
+	}
 }

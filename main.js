@@ -4,7 +4,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Setup
 
-alert('Welcome to my 3D Portfolio!');
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -65,17 +64,14 @@ const spaceTexture = new THREE.TextureLoader().load("space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
-
 const LinkedinTexture = new THREE.TextureLoader().load("Linkedin.png");
-
 const Linkedin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: LinkedinTexture }));
-
 scene.add(Linkedin);
 
 // Moon
 
 const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("Blessing.jpg");
+const normalTexture = new THREE.TextureLoader().load("normal.jpg");
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
@@ -101,8 +97,7 @@ function moveCamera() {
     moon.rotation.y += 0.075;
     moon.rotation.z += 0.05;
 
-    Linkedin.rotation.y += 0.01;
-    Linkedin.rotation.z += 0.01;
+
 
     camera.position.z = t * -0.01;
     camera.position.x = t * -0.0002;
@@ -116,6 +111,10 @@ moveCamera();
 
 function animate() {
     requestAnimationFrame(animate);
+
+    Linkedin.rotation.y += 0.01;
+
+
 
     torus.rotation.x += 0.01;
     torus.rotation.y += 0.005;
