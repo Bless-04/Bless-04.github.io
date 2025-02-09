@@ -1,5 +1,5 @@
 name: Three.js Page Deploy
-#yaml auto formatting is gross; it wont work if i mak
+#yaml auto formatting is gross;
 on:
         push:
                 branches: [main]
