@@ -59,18 +59,18 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load('./images/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
-const LinkedinTexture = new THREE.TextureLoader().load("Linkedin.png");
+const LinkedinTexture = new THREE.TextureLoader().load("./images/Linkedin.png");
 const Linkedin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: LinkedinTexture }));
 scene.add(Linkedin);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("./images/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("./images.normal.jpg");
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
