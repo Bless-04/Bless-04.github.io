@@ -11,6 +11,7 @@ jobs:
                 runs-on: ubuntu-latest
                 steps:
                         - uses: actions/checkout@v4
+                        - run: npm run build # this generates the three.js files
                         - name: Deploy Portfolio
                           uses: rayluo/github-pages-overwriter@v1.3
 
