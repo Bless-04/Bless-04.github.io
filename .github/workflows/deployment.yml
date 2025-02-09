@@ -1,4 +1,4 @@
-name: Three.js Page Deploy
+name: Deploy Page
 #yaml auto formatting is gross;
 on:
         push:
