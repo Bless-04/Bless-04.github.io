@@ -11,8 +11,7 @@ jobs:
                 runs-on: ubuntu-latest
                 steps:
                         - uses: actions/checkout@v4
-                        - run: sudo chown -R $USER ./node_modules # to fix permissions error
-                        - run: npm install --force && npm exec vite build # this installs vite and generates the three.js files
+                        - run: su && npm install --force && npm exec vite build # this installs vite and generates the three.js files
                         - name: Deploy Portfolio
                           uses: rayluo/github-pages-overwriter@v1.3
 
