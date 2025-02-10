@@ -1,11 +1,11 @@
-import './index.css';
+import "./index.css";
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; //?
 
 // Setup
-
 const scene = new THREE.Scene();
 
+document.gete
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
@@ -63,7 +63,7 @@ const spaceTexture = new THREE.TextureLoader().load('./images/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
-const LinkedinTexture = new THREE.TextureLoader().load("./images/Linkedin.png");
+const LinkedinTexture = new THREE.TextureLoader().load();
 const Linkedin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: LinkedinTexture }));
 scene.add(Linkedin);
 
