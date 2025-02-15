@@ -11,7 +11,6 @@ import normal_img from "./images/normal.jpg";
 // Setup
 const scene = new THREE.Scene();
 
-document.gete
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
@@ -114,7 +113,7 @@ moveCamera();
 
 // Animation Loop
 
-function animate() {
+const animate = () => {
     requestAnimationFrame(animate);
 
     Linkedin.rotation.y += 0.01;
