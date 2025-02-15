@@ -1,6 +1,12 @@
-import "./index.css";
+import * as style from "./index.css";
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; //?
+
+
+import space_img from "./images/space.jpg";
+import moon_img from "./images/moon.jpg";
+import linkedin_img from "./images/Linkedin.png";
+import normal_img from "./images/normal.jpg";
 
 // Setup
 const scene = new THREE.Scene();
@@ -59,18 +65,18 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('./images/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load(space_img);
 scene.background = spaceTexture;
 
 // Avatar
-const LinkedinTexture = new THREE.TextureLoader().load();
+const LinkedinTexture = new THREE.TextureLoader().load(linkedin_img);
 const Linkedin = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: LinkedinTexture }));
 scene.add(Linkedin);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("./images/moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("./images.normal.jpg");
+const moonTexture = new THREE.TextureLoader().load(moon_img);
+const normalTexture = new THREE.TextureLoader().load(normal_img);
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
