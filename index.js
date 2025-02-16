@@ -48,7 +48,7 @@ scene.add(pointLight, ambientLight);
 
 // const controls = new OrbitControls(camera, renderer.domElement);
 
-function addStar() {
+const addStar = () => {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24);
     const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
     const star = new THREE.Mesh(geometry, material);
@@ -95,7 +95,7 @@ Linkedin.position.x = 2;
 
 // Scroll Animation
 
-function moveCamera() {
+const moveCamera = () => {
     const t = document.body.getBoundingClientRect().top;
     moon.rotation.x += 0.05;
     moon.rotation.y += 0.075;
