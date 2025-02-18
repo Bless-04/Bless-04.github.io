@@ -1,0 +1,20 @@
+name: Deploy Page
+#yaml auto formatting is gross;
+on:
+    push:
+        branches: [main]
+
+jobs:
+    publish:
+        permissions:
+            contents: write
+        runs-on: windows-latest #using windows fixed the permissions error
+        steps:
+            - uses: actions/checkout@v4
+            - run: npm install --force && npm exec vite build # this installs vite and generates the three.js files
+            - name: Deploy Portfolio
+              uses: rayluo/github-pages-overwriter@v1.3
+
+              with:
+                  source-directory: dist # where the source three.js generates files are - FINALLY WORKED AFTER CHANGING ./dist to JUST dist
+                  target-branch: deployment # branch that deploys it
