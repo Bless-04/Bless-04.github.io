@@ -10,16 +10,10 @@ import {
 	tailwind,
 	nodejs,
 	mongodb,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
 	java,
-	tripguide,
 	threejs,
 	github,
+	winforms,
 } from "../assets";
 
 export const navLinks = [
@@ -38,7 +32,7 @@ export const navLinks = [
 ];
 
 /** Square thing content under about me */
-const services: IService[] = [
+const Services: IService[] = [
 	{
 		title: "Web Developer",
 		icon: html,
@@ -104,7 +98,7 @@ Technologies.Languages = [
 Technologies.Frameworks = [
 	{
 		name: "Windows Forms",
-		icon: dotnet,
+		icon: winforms,
 		link: "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-9.0",
 	},
 	{
@@ -170,13 +164,13 @@ Technologies.Databases = [
 ];
 
 // experience tab
-const experiences: IExperience[] = [];
+const Experiences: IExperience[] = [];
 
-const testimonials: ITestimonial[] = [];
+const Testimonials: ITestimonial[] = [];
 
-const projects: IProject[] = [];
+const Projects: IProject[] = [];
 
-export { services, Technologies, experiences, testimonials, projects };
+export { Services, Technologies, Experiences, Testimonials, Projects };
 
 //for organization
 interface IService {

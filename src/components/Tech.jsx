@@ -5,36 +5,30 @@ import { Technologies } from "../constants";
 import { motion } from "framer-motion";
 
 import { fadeIn, textVariant } from "../utils/motion";
-const tech = [
-	Technologies.Languages,
-	Technologies.Frameworks,
-	Technologies.Libraries,
-	Technologies.Databases,
-	Technologies.Tools,
-	Technologies.Runtimes,
-];
 
-console.log(console.table(Technologies.Tools));
+/** All the technologies */
+const tech = Object.values(Technologies);
 
-const techRows = ["Languages", "Frameworks", "Libraries", "Databases", "Tools", "Runtimes"];
+/** The type of tech */
+tech.rows = Object.keys(Technologies);
 
 const Tech = () => {
 	const languages = tech.map((technology, index) => (
 		<div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
-			<h3 className="md:hidden">{techRows[index]}</h3>
+			<h3 className="md:hidden">{tech.rows[index]}</h3>
 			<motion.div
 				className="w-full flex flex-row flex-wrap gap-2"
 				variants={fadeIn("right", "spring", 0.75)}
 				initial="hidden"
 				whileInView="show"
 				viewport={{ once: true, amount: 0.25 }}>
-				{technology.map((tech, index) => (
+				{technology.map((tech) => (
 					<Link
 						href={tech.link}
 						key={tech.name}
 						target="_blank"
 						className="flex flex-row">
-						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer">
+						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer ">
 							<img
 								src={tech.icon}
 								alt={tech.name}
@@ -51,7 +45,7 @@ const Tech = () => {
 		</div>
 	));
 
-	const techNames = techRows.map((tech, index) => (
+	const techNames = tech.rows.map((tech, index) => (
 		<h3 className="h-[50px] md:flex items-center hidden" key={index}>
 			{tech}
 		</h3>
