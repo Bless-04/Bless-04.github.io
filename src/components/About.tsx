@@ -1,24 +1,20 @@
 import React from "react";
 import Tilt from "react-tilt";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { Services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { github } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => (
-	<Tilt className="xs:w-[250px] w-full">
+	<Tilt className="xs:w-[250px] w-full" options={{ max: 45, scale: 1, speed: 450 }}>
 		<motion.div
 			variants={fadeIn("right", "spring", index * 0.5, 0.75)}
 			className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
-			<div
-				options={{
-					max: 45,
-					scale: 1,
-					speed: 450,
-				}}
-				className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+			<div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
 				<img src={icon} alt="web-development" className="w-16 h-16 object-contain" />
 				<h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
 			</div>
@@ -37,10 +33,27 @@ const About = () => {
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-				I'm a skilled software developer with experience in C# and JavaScript, and I
-				expertise in frameworks like Winforms, Windows Presenter Foundation(WPF), React,
-				Node.js, and Three.js.
+				Hello. I am Blessing Abumere. I am a software developer that mainly specializes in
+				the programming languages C#,Java and Typescript. I am currently pursuing a degree
+				in Computer Science at Towson University with an expected graduation year of 2026.
 			</motion.p>
+
+			<span>
+				<Link to="mailto:babumere04@gmail.com">email</Link>
+				<Link to="https://github.com/Bless-04">
+					<img alt="Blessing Abumere Github Profile Link" width={40} src={github}></img>
+				</Link>
+
+				<Link
+					to="./Blessing Abumere resume.pdf"
+					target="_blank"
+					rel="noreferrer"
+					className="w-fit">
+					<div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
+						<div>Resume</div>
+					</div>
+				</Link>
+			</span>
 
 			<div className="mt-20 flex flex-wrap gap-10">
 				{Services.map((service, index) => (

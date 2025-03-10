@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { SectionWrapper } from "../hoc";
 import { Technologies } from "../constants";
 import { motion } from "framer-motion";
+import { styles } from "../styles";
 
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -10,12 +11,12 @@ import { fadeIn, textVariant } from "../utils/motion";
 const tech = Object.values(Technologies);
 
 /** The type of tech */
-tech.rows = Object.keys(Technologies);
+const techRows = Object.keys(Technologies);
 
 const Tech = () => {
 	const languages = tech.map((technology, index) => (
 		<div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
-			<h3 className="md:hidden">{tech.rows[index]}</h3>
+			<h3 className="md:hidden">{techRows[index]}</h3>
 			<motion.div
 				className="w-full flex flex-row flex-wrap gap-2"
 				variants={fadeIn("right", "spring", 0.75)}
@@ -23,17 +24,11 @@ const Tech = () => {
 				whileInView="show"
 				viewport={{ once: true, amount: 0.25 }}>
 				{technology.map((tech) => (
-					<Link
-						href={tech.link}
-						key={tech.name}
-						target="_blank"
-						className="flex flex-row">
+					<Link to={tech.link} key={tech.name} target="_blank" className="flex flex-row">
 						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer ">
 							<img
 								src={tech.icon}
-								href={tech.link}
 								alt={tech.name}
-								fill={true}
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
 							/>
 							<div className="opacity-0 w-fit min-w-[80px] bg-bgPrimaryLight dark:bg-bgPrimaryDark text-ctnPrimaryLight dark:text-ctnPrimaryDark text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 px-3 -top-3/4 -left-1/3 pointer-events-none">
@@ -46,7 +41,7 @@ const Tech = () => {
 		</div>
 	));
 
-	const techNames = tech.rows.map((tech, index) => (
+	const techNames = techRows.map((tech, index) => (
 		<h3 className="h-[50px] md:flex items-center hidden" key={index}>
 			{tech}
 		</h3>
@@ -60,8 +55,8 @@ const Tech = () => {
 				whileInView="show"
 				viewport={{ once: true, amount: 0.25 }}
 				className="text-center mx-auto">
-				<p className={"sectionSubText"}>What I have learnt so far</p>
-				<h2 className={"sectionHeadText"}>Skills.</h2>
+				<p className={styles.sectionSubText}>What I have learned so far</p>
+				<h2 className={styles.sectionHeadText}>Technical Skills.</h2>
 			</motion.div>
 
 			<motion.div

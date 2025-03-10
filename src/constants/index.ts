@@ -16,6 +16,7 @@ import {
 	winforms,
 } from "../assets";
 
+/** Navigation Bar */
 export const navLinks = [
 	{
 		id: "about",
@@ -26,13 +27,13 @@ export const navLinks = [
 		title: "Work",
 	},
 	{
-		id: "contact",
-		title: "Contact",
+		id: "tech",
+		title: "Skills",
 	},
 ];
 
 /** Square thing content under about me */
-const Services: IService[] = [
+export const Services: IService[] = [
 	{
 		title: "Web Developer",
 		icon: html,
@@ -48,7 +49,7 @@ const Services: IService[] = [
 ];
 
 /** Technologies sorted from most to least proficient */
-const Technologies = {
+export const Technologies = {
 	Languages: [] as ITechnology[],
 	Frameworks: [] as ITechnology[],
 	Libraries: [] as ITechnology[],
@@ -164,15 +165,13 @@ Technologies.Databases = [
 ];
 
 // experience tab
-const Experiences: IExperience[] = [];
+export const Experiences: IExperience[] = [];
 
 // testimonials
-const Testimonials: ITestimonial[] = [];
+export const Testimonials: ITestimonial[] = [];
 
 // projects
-const Projects: IProject[] = [];
-
-export { Services, Technologies, Experiences, Testimonials, Projects };
+export const Projects: IProject[] = [];
 
 //#region Interfaces
 interface IService {

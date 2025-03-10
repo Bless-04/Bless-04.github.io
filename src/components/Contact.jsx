@@ -90,4 +90,4 @@ const Contact = () => {
 	);
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;
