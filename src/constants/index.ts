@@ -52,61 +52,113 @@ const services: IService[] = [
 	},
 ];
 
-/** spinning ball content
- * As of 2/13 There can only be 14 of these or very bad things happen
- */
-const technologies: ITechnology[] = [
+/** Technologies sorted from most to least proficient */
+const Technologies = {
+	Languages: [] as ITechnology[],
+	Frameworks: [] as ITechnology[],
+	Libraries: [] as ITechnology[],
+	Runtimes: [] as ITechnology[],
+	Tools: [] as ITechnology[],
+	Databases: [] as ITechnology[],
+};
+
+Technologies.Languages = [
 	{
 		name: "C#",
 		icon: csharp,
+		link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
 	},
 	{
 		name: "Java",
 		icon: java,
+		link: "https://docs.oracle.com/javase/tutorial/",
 	},
 	{
 		name: "C++",
 		icon: cpp,
+		link: "https://www.learncpp.com/",
 	},
 	{
 		name: "HTML 5",
 		icon: html,
+		link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
 	},
 	{
 		name: "CSS 3",
 		icon: css,
+		link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
 	},
 	{
 		name: "JavaScript",
 		icon: javascript,
+		link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 	},
 	{
 		name: "TypeScript",
 		icon: typescript,
+		link: "https://www.typescriptlang.org/",
+	},
+];
+
+Technologies.Frameworks = [
+	{
+		name: "Windows Forms",
+		icon: dotnet,
+		link: "https://learn.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-9.0",
 	},
 	{
-		name: "React JS",
-		icon: reactjs,
+		name: "Windows Presentation Foundation (WPF)",
+		icon: dotnet,
+		link: "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-9.0",
 	},
 	{
 		name: "Tailwind CSS",
 		icon: tailwind,
+		link: "https://tailwindcss.com/",
 	},
+
+	/* soon
+    {
+        name: "ASP.NET",
+        icon: dotnet,
+        link: "https://dotnet.microsoft.com/en-us/apps/aspnet"
+    }*/
+];
+
+Technologies.Libraries = [
 	{
-		name: "Node JS",
-		icon: nodejs,
-	},
-	{
-		name: "MongoDB",
-		icon: mongodb,
+		name: "React JS",
+		icon: reactjs,
+		link: "https://reactjs.org/",
 	},
 	{
 		name: "Three JS",
 		icon: threejs,
+		link: "https://threejs.org/",
 	},
+];
+
+Technologies.Runtimes = [
 	{
 		name: ".NET",
 		icon: dotnet,
+		link: "https://dotnet.microsoft.com/en-us/",
+	},
+
+	{
+		name: "Node JS",
+		icon: nodejs,
+		link: "https://nodejs.org/en/",
+	},
+];
+
+Technologies.Tools = [];
+
+Technologies.Databases = [
+	{
+		name: "MongoDB",
+		icon: mongodb,
+		link: "https://www.mongodb.com/",
 	},
 ];
 
@@ -117,7 +169,7 @@ const testimonials: ITestimonial[] = [];
 
 const projects: IProject[] = [];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, Technologies, experiences, testimonials, projects };
 
 //for organization
 interface IService {
@@ -128,6 +180,7 @@ interface IService {
 interface ITechnology {
 	name: string;
 	icon: string;
+	link: string;
 }
 
 interface IExperience {
