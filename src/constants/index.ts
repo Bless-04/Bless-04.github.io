@@ -166,13 +166,15 @@ Technologies.Databases = [
 // experience tab
 const Experiences: IExperience[] = [];
 
+// testimonials
 const Testimonials: ITestimonial[] = [];
 
+// projects
 const Projects: IProject[] = [];
 
 export { Services, Technologies, Experiences, Testimonials, Projects };
 
-//for organization
+//#region Interfaces
 interface IService {
 	title: string;
 	icon: string;
@@ -222,3 +224,4 @@ interface ITag {
 	name: string;
 	color: string;
 }
+//#endregion
