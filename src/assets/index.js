@@ -25,7 +25,7 @@ export { default as reactjs } from './tech/reactjs.png';
 export { default as tailwind } from './tech/tailwind.png';
 export { default as typescript } from './tech/typescript.png';
 export { default as threejs } from './tech/threejs.svg';
-export { default as winforms } from '.tech/winforms.webp'
+export { default as winforms } from './tech/winforms.png'
 
 // Company
 export { default as meta } from './company/meta.png';

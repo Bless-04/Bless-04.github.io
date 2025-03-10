@@ -31,6 +31,7 @@ const Tech = () => {
 						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer ">
 							<img
 								src={tech.icon}
+								href={tech.link}
 								alt={tech.name}
 								fill={true}
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
