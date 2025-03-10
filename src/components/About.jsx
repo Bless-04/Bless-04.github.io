@@ -11,7 +11,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { github } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => (
-	<Tilt className="xs:w-[250px] w-full" options={{ max: 45, scale: 1, speed: 450 }}>
+	<Tilt className="xs:w-[250px] w-full">
 		<motion.div
 			variants={fadeIn("right", "spring", index * 0.5, 0.75)}
 			className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
@@ -39,7 +39,7 @@ const About = () => {
 				in Computer Science at Towson University with an expected graduation year of 2026.
 			</motion.p>
 
-			<span>
+			<div className="flex mt-20 flex-wrap gap-10">
 				<Link to="mailto:babumere04@gmail.com" className="display: block">
 					<img width={40} alt="Blessing Abumere Email Link" src={gmail}></img>
 				</Link>
@@ -52,7 +52,7 @@ const About = () => {
 						<div>Resume</div>
 					</div>
 				</Link>
-			</span>
+			</div>
 
 			<div className="mt-20 flex flex-wrap gap-10">
 				{Services.map((service, index) => (
