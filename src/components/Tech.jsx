@@ -14,14 +14,14 @@ const tech = [
 	Technologies.Runtimes,
 ];
 
-console.log(console.table(Technologies.Languages));
+console.log(console.table(Technologies.Tools));
 
-const techVariants = ["Languages", "Frameworks", "Libraries", "Databases", "Tools", "Runtimes"];
+const techRows = ["Languages", "Frameworks", "Libraries", "Databases", "Tools", "Runtimes"];
 
 const Tech = () => {
 	const languages = tech.map((technology, index) => (
 		<div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
-			<h3 className="md:hidden">{techVariants[index]}</h3>
+			<h3 className="md:hidden">{techRows[index]}</h3>
 			<motion.div
 				className="w-full flex flex-row flex-wrap gap-2"
 				variants={fadeIn("right", "spring", 0.75)}
@@ -35,7 +35,7 @@ const Tech = () => {
 						target="_blank"
 						className="flex flex-row">
 						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer">
-							<Image
+							<img
 								src={tech.icon}
 								alt={tech.name}
 								fill={true}
@@ -51,7 +51,7 @@ const Tech = () => {
 		</div>
 	));
 
-	const techNames = techVariants.map((tech, index) => (
+	const techNames = techRows.map((tech, index) => (
 		<h3 className="h-[50px] md:flex items-center hidden" key={index}>
 			{tech}
 		</h3>

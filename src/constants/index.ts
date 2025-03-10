@@ -19,6 +19,7 @@ import {
 	java,
 	tripguide,
 	threejs,
+	github,
 } from "../assets";
 
 export const navLinks = [
@@ -152,7 +153,13 @@ Technologies.Runtimes = [
 	},
 ];
 
-Technologies.Tools = [];
+Technologies.Tools = [
+	{
+		name: "GitHub",
+		icon: github,
+		link: "https://github.com/Bless-04",
+	},
+];
 
 Technologies.Databases = [
 	{
