@@ -27,7 +27,7 @@ const Contact = () => {
 	};
 
 	const handleSubmit = (e) => {
-		alert("This has not been implemented");
+		window.open("mailto:babumere04@gmail.com");
 	};
 
 	return (
@@ -38,7 +38,12 @@ const Contact = () => {
 				<p className={styles.sectionSubText}>Get in touch</p>
 				<h3 className={styles.sectionHeadText}>Contact.</h3>
 
-				<form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+				<form
+					ref={formRef}
+					method="post"
+					action="mailto:noone@snai1mai1.com"
+					enctype="text/plain"
+					className="mt-12 flex flex-col gap-8">
 					<label className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your Name</span>
 						<input
@@ -46,7 +51,7 @@ const Contact = () => {
 							name="name"
 							value={form.name}
 							onChange={handleChange}
-							placeholder="What's your good name?"
+							placeholder="Name?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -57,7 +62,7 @@ const Contact = () => {
 							name="email"
 							value={form.email}
 							onChange={handleChange}
-							placeholder="What's your web address?"
+							placeholder="Web Address?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -68,7 +73,7 @@ const Contact = () => {
 							name="message"
 							value={form.message}
 							onChange={handleChange}
-							placeholder="What you want to say?"
+							placeholder="Email Content?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>

@@ -1,4 +1,5 @@
 import {
+	avalonia,
 	dotnet,
 	javascript,
 	typescript,
@@ -14,6 +15,7 @@ import {
 	threejs,
 	github,
 	winforms,
+	git,
 } from "../assets";
 
 /** Navigation Bar */
@@ -108,6 +110,12 @@ Technologies.Frameworks = [
 		link: "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-9.0",
 	},
 	{
+		name: "Avalonia UI",
+		icon: avalonia,
+		link: "https://avaloniaui.net/",
+	},
+
+	{
 		name: "Tailwind CSS",
 		icon: tailwind,
 		link: "https://tailwindcss.com/",
@@ -153,6 +161,11 @@ Technologies.Tools = [
 		name: "GitHub",
 		icon: github,
 		link: "https://github.com/Bless-04",
+	},
+	{
+		name: "Git",
+		icon: git,
+		link: "https://git-scm.com/",
 	},
 ];
 

@@ -28,6 +28,7 @@ export { default as tailwind } from './tech/tailwind.png';
 export { default as typescript } from './tech/typescript.png';
 export { default as threejs } from './tech/threejs.svg';
 export { default as winforms } from './tech/winforms.png'
+export { default as avalonia } from './tech/avalonia.ico'
 
 // Company
 export { default as meta } from './company/meta.png';
@@ -36,6 +37,3 @@ export { default as starbucks } from './company/starbucks.png';
 export { default as tesla } from './company/tesla.png';
 
 // Projects
-export { default as carrent } from './carrent.png';
-export { default as jobit } from './jobit.png';
-export { default as tripguide } from './tripguide.png';
