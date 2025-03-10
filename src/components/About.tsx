@@ -3,6 +3,7 @@ import Tilt from "react-tilt";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import { gmail, resume } from "../assets";
 import { styles } from "../styles";
 import { Services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -39,16 +40,14 @@ const About = () => {
 			</motion.p>
 
 			<span>
-				<Link to="mailto:babumere04@gmail.com">email</Link>
+				<Link to="mailto:babumere04@gmail.com" className="display: block">
+					<img width={40} alt="Blessing Abumere Email Link" src={gmail}></img>
+				</Link>
 				<Link to="https://github.com/Bless-04">
 					<img alt="Blessing Abumere Github Profile Link" width={40} src={github}></img>
 				</Link>
 
-				<Link
-					to="./Blessing Abumere resume.pdf"
-					target="_blank"
-					rel="noreferrer"
-					className="w-fit">
+				<Link to={resume} target="_blank" rel="noreferrer" className="w-fit">
 					<div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
 						<div>Resume</div>
 					</div>

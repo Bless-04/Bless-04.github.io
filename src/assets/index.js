@@ -1,4 +1,6 @@
 // General?
+export { default as resume } from './Blessing Abumere resume.pdf';
+export { default as gmail } from './gmail.png';
 export { default as logo } from './logo.svg';
 export { default as backend } from './backend.png';
 export { default as creator } from './creator.png';
