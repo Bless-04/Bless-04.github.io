@@ -16,6 +16,11 @@ import {
 	github,
 	winforms,
 	git,
+	xunit,
+	junit,
+	nunit,
+	dotnetCORE,
+	mstest,
 } from "../assets";
 
 /** Navigation Bar */
@@ -46,18 +51,20 @@ export const Services: IService[] = [
 	},
 	{
 		title: "Full Stack Developer",
-		icon: dotnet,
+		icon: dotnetCORE,
 	},
 ];
 
 /** Technologies sorted from most to least proficient */
 export const Technologies = {
 	Languages: [] as ITechnology[],
-	Frameworks: [] as ITechnology[],
 	Libraries: [] as ITechnology[],
 	Runtimes: [] as ITechnology[],
 	Tools: [] as ITechnology[],
 	Databases: [] as ITechnology[],
+	"Unit Testing": [] as ITechnology[],
+	"UI Frameworks": [] as ITechnology[],
+	//"Web Frameworks": [] as ITechnology[],
 };
 
 Technologies.Languages = [
@@ -82,7 +89,7 @@ Technologies.Languages = [
 		link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
 	},
 	{
-		name: "CSS 3",
+		name: "CSS",
 		icon: css,
 		link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
 	},
@@ -98,7 +105,7 @@ Technologies.Languages = [
 	},
 ];
 
-Technologies.Frameworks = [
+Technologies["UI Frameworks"] = [
 	{
 		name: "Windows Forms",
 		icon: winforms,
@@ -144,7 +151,7 @@ Technologies.Libraries = [
 
 Technologies.Runtimes = [
 	{
-		name: ".NET",
+		name: ".NET Runtime",
 		icon: dotnet,
 		link: "https://dotnet.microsoft.com/en-us/",
 	},
@@ -158,7 +165,7 @@ Technologies.Runtimes = [
 
 Technologies.Tools = [
 	{
-		name: "GitHub",
+		name: "GitHub ",
 		icon: github,
 		link: "https://github.com/Bless-04",
 	},
@@ -177,6 +184,29 @@ Technologies.Databases = [
 	},
 ];
 
+Technologies["Unit Testing"] = [
+	{
+		name: "XUnit",
+		icon: xunit,
+		link: "https://xunit.net/",
+	},
+	{
+		name: "Junit",
+		icon: junit,
+		link: "https://junit.org/junit5/",
+	},
+	{
+		name: "NUnit",
+		icon: nunit,
+		link: "https://nunit.org/",
+	},
+	{
+		name: "MSTest",
+		icon: mstest,
+		link: "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest",
+	},
+];
+
 // experience tab
 export const Experiences: IExperience[] = [];
 
@@ -192,7 +222,7 @@ interface IService {
 	icon: string;
 }
 
-interface ITechnology {
+export interface ITechnology {
 	name: string;
 	icon: string;
 	link: string;
