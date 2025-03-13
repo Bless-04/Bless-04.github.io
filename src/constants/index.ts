@@ -21,6 +21,7 @@ import {
 	nunit,
 	dotnetCORE,
 	mstest,
+	framermotion,
 } from "../assets";
 
 /** Navigation Bar */
@@ -146,6 +147,11 @@ Technologies.Libraries = [
 		name: "Three JS",
 		icon: threejs,
 		link: "https://threejs.org/",
+	},
+	{
+		name: "Framer Motion",
+		icon: framermotion,
+		link: "https://motion.dev/",
 	},
 ];
 
