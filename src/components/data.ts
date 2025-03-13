@@ -59,12 +59,13 @@ export const Services: IService[] = [
 /** Technologies sorted from most to least proficient */
 export const Technologies = {
 	Languages: [] as ITechnology[],
+	"UI Frameworks": [] as ITechnology[],
 	Libraries: [] as ITechnology[],
-	Runtimes: [] as ITechnology[],
+	"Unit Testing": [] as ITechnology[],
 	Tools: [] as ITechnology[],
 	Databases: [] as ITechnology[],
-	"Unit Testing": [] as ITechnology[],
-	"UI Frameworks": [] as ITechnology[],
+	Runtimes: [] as ITechnology[],
+
 	//"Web Frameworks": [] as ITechnology[],
 };
 
