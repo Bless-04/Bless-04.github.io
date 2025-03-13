@@ -64,10 +64,10 @@ const About = () => {
 					/>
 				</Link>
 
-				<Link to={resume} target="_blank" rel="noreferrer" className="w-fit">
-					<div className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
-						<div>Resume</div>
-					</div>
+				<Link to={resume} target="_blank" rel="noreferrer">
+					<button className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
+						Resume
+					</button>
 				</Link>
 			</div>
 

@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { EarthCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 
 export { default as Hello } from "./Hello";
 export { default as Navbar } from "./Navbar";
@@ -12,7 +12,6 @@ export { default as CanvasLoader } from "./Loader";
 
 export {
     EarthCanvas,
-    BallCanvas,
     ComputersCanvas,
     StarsCanvas
 };
