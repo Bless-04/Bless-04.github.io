@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-	const formRef = useRef();
+	const formRef = useRef<HTMLFormElement>(null);
 	const [form, setForm] = useState({
 		name: "",
 		email: "",
@@ -41,8 +41,7 @@ const Contact = () => {
 				<form
 					ref={formRef}
 					method="post"
-					action="mailto:noone@snai1mai1.com"
-					enctype="text/plain"
+					action="mailto:babumere04@gmail.com?subject=Contact Form Submission?content=Contact Form Submission"
 					className="mt-12 flex flex-col gap-8">
 					<label className="flex flex-col">
 						<span className="text-white font-medium mb-4">Your Name</span>

@@ -11,6 +11,7 @@ import {
 	Works,
 	StarsCanvas,
 } from "./components";
+import React from "react";
 
 const App = () => {
 	return (
