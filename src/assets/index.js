@@ -6,6 +6,8 @@ export { default as backend } from './backend.png';
 export { default as github } from './github.png';
 export { default as menu } from './menu.svg';
 export { default as close } from './close.svg';
+export { default as linkedin } from './linkedin.svg';
+export { default as instagram } from './instagram.svg'
 
 //Tech
 export { default as cpp } from './tech/cpp.png';

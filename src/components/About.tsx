@@ -3,13 +3,13 @@ import Tilt from "react-tilt";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { gmail, resume } from "../assets";
+import { gmail, resume, linkedin, github, instagram } from "../assets";
 import { styles } from "../styles";
 import { Services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { github } from "../assets";
 
+const imgWidth: number = 40;
 const ServiceCard = ({ index, title, icon }) => (
 	<Tilt className="xs:w-[250px] w-full">
 		<motion.div
@@ -41,10 +41,24 @@ const About = () => {
 
 			<div className="flex mt-20 flex-wrap gap-10">
 				<Link to="mailto:babumere04@gmail.com" className="display: block">
-					<img width={40} alt="Blessing Abumere Email Link" src={gmail}></img>
+					<img width={40} alt="Blessing Abumere Email Link" src={gmail} />
 				</Link>
 				<Link to="https://github.com/Bless-04">
-					<img alt="Blessing Abumere Github Profile Link" width={40} src={github}></img>
+					<img alt="Blessing Abumere Github Profile Link" width={imgWidth} src={github} />
+				</Link>
+				<Link to="https://www.linkedin.com/in/blessing-abumere-a5804523b">
+					<img
+						alt="Blessing Abumere Linkedin Profile Link"
+						width={imgWidth}
+						src={linkedin}
+					/>
+				</Link>
+				<Link to="https://www.instagram.com/blessing_abumere04/">
+					<img
+						alt="Blessing Abumere Instagram Profile Link"
+						width={imgWidth}
+						src={instagram}
+					/>
 				</Link>
 
 				<Link to={resume} target="_blank" rel="noreferrer" className="w-fit">
