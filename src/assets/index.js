@@ -31,7 +31,7 @@ export { default as avalonia } from './tech/avalonia.ico'
 export { default as xunit } from './tech/Xunit.png'
 export { default as nunit } from './tech/nunit.svg'
 export { default as junit } from './tech/Junit.png'
-export { default as dotnetCORE } from './tech/.NET Core.png'
+export { default as dotnetCORE } from './tech/.NETCore.png'
 export { default as mstest } from './tech/MStest.png'
 export { default as framermotion } from './tech/framer-motion.svg'
 
