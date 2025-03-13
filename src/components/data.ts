@@ -217,13 +217,24 @@ Technologies["Unit Testing"] = [
 export const Experiences: IExperience[] = [];
 
 // testimonials
-export const Testimonials: ITestimonial[] = [];
+export const Testimonials: ITestimonial[] = [
+	/* for test
+	{
+		testimonial:
+
+			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+		name: "Sara Lee",
+		designation: "CFO",
+		company: "Acme Co",
+		image: "https://randomuser.me/api/portraits/women/4.jpg",
+	}, */
+];
 
 // projects
 export const Projects: IProject[] = [];
 
 //#region Interfaces
-interface IService {
+export interface IService {
 	title: string;
 	icon: string;
 }
@@ -234,7 +245,7 @@ export interface ITechnology {
 	link: string;
 }
 
-interface IExperience {
+export interface IExperience {
 	/** title at the experience */
 	title: string;
 
@@ -252,7 +263,7 @@ interface IExperience {
 	points: string[];
 }
 
-interface ITestimonial {
+export interface ITestimonial {
 	testimonial: string;
 	name: string;
 	designation: string;
@@ -260,7 +271,7 @@ interface ITestimonial {
 	image: string;
 }
 
-interface IProject {
+export interface IProject {
 	name: string;
 	description: string;
 	tags: ITag[];
@@ -268,7 +279,7 @@ interface IProject {
 	source_code_link: string;
 }
 
-interface ITag {
+export interface ITag {
 	name: string;
 	color: string;
 }

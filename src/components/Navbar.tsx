@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks } from "./data";
 import { favicon, menu, close } from "../assets";
 
 const Navbar = () => {

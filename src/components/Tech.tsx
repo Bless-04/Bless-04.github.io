@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SectionWrapper } from "../hoc";
-import { Technologies } from "../constants";
+import { ITechnology, Technologies } from "./data";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
@@ -14,7 +14,7 @@ const tech = Object.values(Technologies);
 const techRows = Object.keys(Technologies);
 
 const Tech = () => {
-	const languages = tech.map((technology, index) => (
+	const languages = tech.map((technology: ITechnology[], index: number) => (
 		<div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
 			<h3 className="md:hidden">{techRows[index]}</h3>
 			<motion.div

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import { gmail, resume, linkedin, github, instagram } from "../assets";
 import { styles } from "../styles";
-import { Services } from "../constants";
+import { Services } from "./data";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 

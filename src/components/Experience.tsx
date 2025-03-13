@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { Experiences } from "../constants";
+import { Experiences, IExperience } from "./data";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience }: { experience: IExperience }) => {
 	return (
 		<VerticalTimelineElement
 			contentStyle={{
