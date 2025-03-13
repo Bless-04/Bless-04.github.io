@@ -43,9 +43,11 @@ const About = () => {
 				<Link to="mailto:babumere04@gmail.com" className="display: block">
 					<img width={40} alt="Blessing Abumere Email Link" src={gmail} />
 				</Link>
+
 				<Link to="https://github.com/Bless-04">
 					<img alt="Blessing Abumere Github Profile Link" width={imgWidth} src={github} />
 				</Link>
+
 				<Link to="https://www.linkedin.com/in/blessing-abumere-a5804523b">
 					<img
 						alt="Blessing Abumere Linkedin Profile Link"
@@ -53,6 +55,7 @@ const About = () => {
 						src={linkedin}
 					/>
 				</Link>
+
 				<Link to="https://www.instagram.com/blessing_abumere04/">
 					<img
 						alt="Blessing Abumere Instagram Profile Link"
