@@ -39,7 +39,7 @@ const About = () => {
 				in Computer Science at Towson University with an expected graduation year of 2026.
 			</motion.p>
 
-			<div className="flex mt-20 flex-wrap gap-10">
+			<motion.div variants={fadeIn("", "", 0.5, 2)} className="flex mt-20 flex-wrap gap-10">
 				<Link to="mailto:babumere04@gmail.com" className="display: block">
 					<img width={40} alt="Blessing Abumere Email Link" src={gmail} />
 				</Link>
@@ -69,7 +69,7 @@ const About = () => {
 						Resume
 					</button>
 				</Link>
-			</div>
+			</motion.div>
 
 			<div className="mt-20 flex flex-wrap gap-10">
 				{Services.map((service, index) => (
