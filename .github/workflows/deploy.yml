@@ -6,6 +6,9 @@ on:
 
 jobs:
     publish:
+        concurrency:
+            group: deploy
+            cancel-in-progress: true
         permissions:
             contents: write
         runs-on: windows-latest #using windows fixed the permissions error
