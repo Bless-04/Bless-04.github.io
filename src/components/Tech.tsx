@@ -22,7 +22,8 @@ const Tech = () => {
 				variants={fadeIn("right", "spring", 0.75)}
 				initial="hidden"
 				whileInView="show"
-				viewport={{ once: true, amount: 0.25 }}>
+				viewport={{ once: true, amount: 0.25 }}
+			>
 				{technology.map((tech) => (
 					<Link to={tech.link} key={tech.name} target="_blank" className="flex flex-row">
 						<div className="w-[40px] h-[40px] relative flex flex-row items-center group cursor-pointer ">
@@ -31,7 +32,7 @@ const Tech = () => {
 								alt={tech.name}
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
 							/>
-							<div className="opacity-0 w-fit min-w-[80px] bg-bgPrimaryLight dark:bg-primary text-ctnPrimaryLight dark:text-ctnPrimaryDark text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 px-3 -top-3/4 -left-1/3 pointer-events-none">
+							<div className="opacity-0 w-fit min-w-[100px] bg-bgPrimaryLight dark:bg-primary text-ctnPrimaryLight dark:text-ctnPrimaryDark text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 px-3 -top-3/4 -left-1/3 pointer-events-none">
 								{tech.name}
 							</div>
 						</div>
@@ -54,7 +55,8 @@ const Tech = () => {
 				initial="hidden"
 				whileInView="show"
 				viewport={{ once: true, amount: 0.25 }}
-				className="text-center mx-auto">
+				className="text-center mx-auto"
+			>
 				<p className={styles.sectionSubText}>
 					<u>
 						<b>Some</b>
@@ -69,16 +71,18 @@ const Tech = () => {
 				initial="hidden"
 				whileInView="show"
 				viewport={{ once: true, amount: 0.25 }}
-				className=" mt-4  dark:text-secondary  dark:bg-tertiary  text-[17px] md:w-fit md:min-w-[65%] w-full h-full leading-[30px] flex md:flex-row flex-col gap-4 p-8 md:px-16 mx-auto rounded-lg justify-between backdrop-filter backdrop-blur-xl bg-opacity-10 shadow-sm shadow-primary">
+				className=" mt-4  dark:text-secondary  dark:bg-tertiary  text-[17px] md:w-fit md:min-w-[65%] w-full h-full leading-[30px] flex md:flex-row flex-col gap-4 p-8 md:px-16 mx-auto rounded-lg justify-between backdrop-filter backdrop-blur-xl bg-opacity-10 shadow-sm shadow-primary"
+			>
 				<motion.div
 					variants={textVariant()}
 					initial="hidden"
 					whileInView="show"
 					viewport={{ once: true }}
-					className="flex flex-col justify-between h-full gap-5">
+					className="flex flex-col justify-between h-full gap-5"
+				>
 					{techNames}
 				</motion.div>
-				<div className="w-[2px]  h-[475px] dark:bg-secondary bg-ctnSecondaryLight rounded-lg md:flex hidden mx-8" />
+				<div className="w-[2px]  h-[550px] dark:bg-secondary bg-ctnSecondaryLight rounded-lg md:flex hidden mx-8" />
 				<div className="md:w-[60%] w-full pl-2 h-full flex flex-col gap-8">{languages}</div>
 			</motion.div>
 		</section>
