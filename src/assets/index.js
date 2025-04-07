@@ -32,6 +32,8 @@ export { default as xunit } from './tech/Xunit.png'
 export { default as nunit } from './tech/nunit.svg'
 export { default as junit } from './tech/Junit.png'
 export { default as dotnetCORE } from './tech/dotNETCore.png'
+export { default as ASPdotnet } from './tech/ASP.NET.png'
+export { default as expressjs } from './tech/express.js.png'
 export { default as mstest } from './tech/MStest.png'
 export { default as framermotion } from './tech/framer-motion.svg'
 

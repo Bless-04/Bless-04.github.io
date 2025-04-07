@@ -19,9 +19,11 @@ import {
 	xunit,
 	junit,
 	nunit,
+	ASPdotnet,
 	dotnetCORE,
 	mstest,
 	framermotion,
+	expressjs,
 } from "../assets";
 
 /** Navigation Bar */
@@ -59,7 +61,8 @@ export const Services: IService[] = [
 /** Technologies sorted from most to least proficient */
 export const Technologies = {
 	Languages: [] as ITechnology[],
-	"UI Frameworks": [] as ITechnology[],
+	"Frontend Frameworks": [] as ITechnology[],
+	"Backend Frameworks": [] as ITechnology[],
 	Libraries: [] as ITechnology[],
 	"Unit Testing": [] as ITechnology[],
 	Tools: [] as ITechnology[],
@@ -107,7 +110,7 @@ Technologies.Languages = [
 	},
 ];
 
-Technologies["UI Frameworks"] = [
+Technologies["Frontend Frameworks"] = [
 	{
 		name: "Windows Forms",
 		icon: winforms,
@@ -136,6 +139,19 @@ Technologies["UI Frameworks"] = [
         icon: dotnet,
         link: "https://dotnet.microsoft.com/en-us/apps/aspnet"
     }*/
+];
+
+Technologies["Backend Frameworks"] = [
+	{
+		name: "ASP.NET Core",
+		icon: ASPdotnet,
+		link: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps",
+	},
+	{
+		name: "Express JS",
+		icon: expressjs,
+		link: "https://expressjs.com/",
+	},
 ];
 
 Technologies.Libraries = [
