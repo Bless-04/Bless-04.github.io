@@ -14,7 +14,8 @@ jobs:
         runs-on: windows-latest #using windows fixed the permissions error
         steps:
             - uses: actions/checkout@v4
-            - run: npm install --force && npm exec vite build # this installs vite and generates the three.js files
+            - name: Build Portfolio
+              run: npm install --force && npm exec vite build # this installs vite and generates the three.js files
             - name: Deploy Portfolio
               uses: rayluo/github-pages-overwriter@v1.3
 
