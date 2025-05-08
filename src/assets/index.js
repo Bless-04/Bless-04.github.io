@@ -36,6 +36,7 @@ export { default as ASPdotnet } from './tech/ASP.NET.png'
 export { default as expressjs } from './tech/express.js.png'
 export { default as mstest } from './tech/MStest.png'
 export { default as framermotion } from './tech/framer-motion.svg'
+export { default as postgreSQL } from './tech/PostgreSQL.png'
 
 // Company
 

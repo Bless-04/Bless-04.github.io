@@ -24,6 +24,7 @@ import {
 	mstest,
 	framermotion,
 	expressjs,
+	postgreSQL,
 } from "../assets";
 
 /** Navigation Bar */
@@ -204,6 +205,11 @@ Technologies.Databases = [
 		name: "MongoDB",
 		icon: mongodb,
 		link: "https://www.mongodb.com/",
+	},
+	{
+		name: "PostgreSQL",
+		icon: postgreSQL,
+		link: "https://www.postgresql.org/",
 	},
 ];
 
