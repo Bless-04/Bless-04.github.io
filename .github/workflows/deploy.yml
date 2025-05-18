@@ -11,7 +11,7 @@ jobs:
             cancel-in-progress: true
         permissions:
             contents: write
-        runs-on: windows-latest #using windows fixed the permissions error
+        runs-on: macOS-latest #using windows fixed the permissions error
         steps:
             - uses: actions/checkout@v4
             - name: Build Portfolio
