@@ -37,7 +37,8 @@ export { default as expressjs } from './tech/express.js.png'
 export { default as mstest } from './tech/MStest.png'
 export { default as framermotion } from './tech/framer-motion.svg'
 export { default as postgreSQL } from './tech/PostgreSQL.png'
-
+export { default as EFCore } from './tech/EF Core.png'
+export { default as mongoose } from './tech/mongoose.png'
 // Company
 
 // Projects

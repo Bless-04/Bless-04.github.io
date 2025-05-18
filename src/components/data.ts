@@ -25,6 +25,8 @@ import {
 	framermotion,
 	expressjs,
 	postgreSQL,
+	mongoose,
+	EFCore,
 } from "../assets";
 
 /** Navigation Bar */
@@ -170,6 +172,16 @@ Technologies.Libraries = [
 		name: "Framer Motion",
 		icon: framermotion,
 		link: "https://motion.dev/",
+	},
+	{
+		name: "Entity Framework",
+		icon: EFCore,
+		link: "https://learn.microsoft.com/en-us/ef/",
+	},
+	{
+		name: "Mongoose",
+		icon: mongoose,
+		link: "https://mongoosejs.com/",
 	},
 ];
 
