@@ -244,7 +244,7 @@ Technologies["Unit Testing"] = [
 	{
 		name: "MSTest",
 		icon: mstest,
-		link: "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest",
+		link: "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro",
 	},
 ];
 

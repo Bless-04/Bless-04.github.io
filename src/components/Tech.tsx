@@ -8,10 +8,10 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 /** All the technologies */
-const tech = Object.values(Technologies);
+const tech: ITechnology[][] = Object.values(Technologies);
 
 /** The type of tech */
-const techRows = Object.keys(Technologies);
+const techRows: string[] = Object.keys(Technologies);
 
 const Tech = () => {
 	const languages = tech.map((technology: ITechnology[], index: number) => (
