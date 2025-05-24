@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SectionWrapper } from "../hoc";
-import { ITechnology, Technologies } from "./data";
+import { technologies, Technology } from "./data";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 import { fadeIn, textVariant } from "../utils/motion";
 
 /** All the technologies */
-const tech: ITechnology[][] = Object.values(Technologies);
+const tech: Technology[][] = Object.values(technologies);
 
 /** The type of tech */
-const techRows: string[] = Object.keys(Technologies);
+const techRows: string[] = Object.keys(technologies);
 
-const Tech = () => {
-	const languages = tech.map((technology: ITechnology[], index: number) => (
+function Tech() {
+	const languages = tech.map((technology: Technology[], index: number) => (
 		<div className="w-full h-fit flex gap-2 md:flex-row flex-col" key={index}>
 			<h3 className="md:hidden">{techRows[index]}</h3>
 			<motion.div
@@ -87,6 +87,6 @@ const Tech = () => {
 			</motion.div>
 		</section>
 	);
-};
+}
 
 export default SectionWrapper(Tech, "tech");

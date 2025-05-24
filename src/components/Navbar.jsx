@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "./data";
 import { favicon, menu, close } from "../assets";
 
-const Navbar = () => {
+function Navbar() {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
@@ -17,9 +17,9 @@ const Navbar = () => {
 			else setScrolled(false);
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener(scroll, handleScroll);
 
-		return () => window.removeEventListener("scroll", handleScroll);
+		return () => window.removeEventListener(scroll, handleScroll);
 	}, []);
 
 	return (
@@ -92,6 +92,6 @@ const Navbar = () => {
 			</div>
 		</nav>
 	);
-};
+}
 
 export default Navbar;

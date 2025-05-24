@@ -1,7 +1,8 @@
 import { Html, useProgress } from "@react-three/drei";
 import React from "react";
 
-const CanvasLoader = () => {
+/** percentage loaded */
+function CanvasLoader() {
 	const { progress } = useProgress();
 	return (
 		<Html
@@ -27,6 +28,6 @@ const CanvasLoader = () => {
 			</p>
 		</Html>
 	);
-};
+}
 
 export default CanvasLoader;

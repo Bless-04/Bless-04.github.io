@@ -46,50 +46,58 @@ export const navLinks = [
 ];
 
 /** Square thing content under about me */
-export const Services: IService[] = [
+export const services: Service[] = [
 	{
 		title: "Web Developer",
 		icon: html,
 	},
 	{
 		title: "Desktop App Developer",
-		icon: csharp,
+		icon: avalonia,
 	},
 	{
 		title: "Full Stack Developer",
-		icon: dotnetCORE,
+		icon: typescript,
 	},
 ];
 
-/** Technologies sorted from most to least proficient */
-export const Technologies = {
-	Languages: [] as ITechnology[],
-	"Frontend Frameworks": [] as ITechnology[],
-	"Backend Frameworks": [] as ITechnology[],
-	Libraries: [] as ITechnology[],
-	"Unit Testing": [] as ITechnology[],
-	Tools: [] as ITechnology[],
-	Databases: [] as ITechnology[],
-	Runtimes: [] as ITechnology[],
+//#region technologies
 
-	//"Web Frameworks": [] as ITechnology[],
+export interface Technology {
+	name: string;
+	icon: string;
+	link: string;
+}
+
+/** technologies sorted from most to least proficient */
+export const technologies = {
+	Languages: [] as Technology[],
+	"Frontend Frameworks": [] as Technology[],
+	"Backend Frameworks": [] as Technology[],
+	Libraries: [] as Technology[],
+	"Unit Testing": [] as Technology[],
+	Tools: [] as Technology[],
+	Databases: [] as Technology[],
+	Runtimes: [] as Technology[],
+
+	//"Web Frameworks": [] as Technology[],
 };
 
-Technologies.Languages = [
+technologies.Languages = [
 	{
 		name: "C#",
 		icon: csharp,
 		link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
 	},
 	{
-		name: "Java",
-		icon: java,
-		link: "https://docs.oracle.com/javase/tutorial/",
-	},
-	{
 		name: "C++",
 		icon: cpp,
 		link: "https://www.learncpp.com/",
+	},
+	{
+		name: "Java",
+		icon: java,
+		link: "https://docs.oracle.com/javase/tutorial/",
 	},
 	{
 		name: "HTML 5",
@@ -113,7 +121,7 @@ Technologies.Languages = [
 	},
 ];
 
-Technologies["Frontend Frameworks"] = [
+technologies["Frontend Frameworks"] = [
 	{
 		name: "Windows Forms",
 		icon: winforms,
@@ -144,7 +152,7 @@ Technologies["Frontend Frameworks"] = [
     }*/
 ];
 
-Technologies["Backend Frameworks"] = [
+technologies["Backend Frameworks"] = [
 	{
 		name: "ASP.NET Core",
 		icon: ASPdotnet,
@@ -157,7 +165,7 @@ Technologies["Backend Frameworks"] = [
 	},
 ];
 
-Technologies.Libraries = [
+technologies.Libraries = [
 	{
 		name: "React JS",
 		icon: reactjs,
@@ -185,7 +193,7 @@ Technologies.Libraries = [
 	},
 ];
 
-Technologies.Runtimes = [
+technologies.Runtimes = [
 	{
 		name: ".NET Runtime",
 		icon: dotnet,
@@ -199,7 +207,7 @@ Technologies.Runtimes = [
 	},
 ];
 
-Technologies.Tools = [
+technologies.Tools = [
 	{
 		name: "GitHub ",
 		icon: github,
@@ -212,7 +220,7 @@ Technologies.Tools = [
 	},
 ];
 
-Technologies.Databases = [
+technologies.Databases = [
 	{
 		name: "MongoDB",
 		icon: mongodb,
@@ -225,7 +233,7 @@ Technologies.Databases = [
 	},
 ];
 
-Technologies["Unit Testing"] = [
+technologies["Unit Testing"] = [
 	{
 		name: "XUnit",
 		icon: xunit,
@@ -248,39 +256,11 @@ Technologies["Unit Testing"] = [
 	},
 ];
 
-// experience tab
-export const Experiences: IExperience[] = [];
+//#endregion
 
-// testimonials
-export const Testimonials: ITestimonial[] = [
-	/* for test
-	{
-		testimonial:
+//#region Experiences
 
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
-	}, */
-];
-
-// projects
-export const Projects: IProject[] = [];
-
-//#region Interfaces
-export interface IService {
-	title: string;
-	icon: string;
-}
-
-export interface ITechnology {
-	name: string;
-	icon: string;
-	link: string;
-}
-
-export interface IExperience {
+export interface Experience {
 	/** title at the experience */
 	title: string;
 
@@ -297,8 +277,79 @@ export interface IExperience {
 	date: string;
 	points: string[];
 }
+export const experiences: Experience[] = [];
 
-export interface ITestimonial {
+//#endregion
+
+//#region Testimonials
+export const testimonials: Testimonial[] = [
+	/* for test
+	{
+		testimonial:
+
+			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+		name: "Sara Lee",
+		designation: "CFO",
+		company: "Acme Co",
+		image: "https://randomuser.me/api/portraits/women/4.jpg",
+	}, */
+];
+
+//#endregion
+
+//#region Projects
+
+export interface Project {
+	name: string;
+	description: string;
+	tags: Tag[];
+	image: string;
+	link: string;
+}
+
+export interface Tag {
+	name: string;
+	color: string;
+}
+
+/** @link  src\index.css */
+const style = {
+	cpp: "#2f80ed",
+	csharp: "red-text-gradient",
+};
+export const projects: Project[] = [
+	/*
+	{
+		name: "Cross Platform Shell",
+		description:
+			"An operating system shell capable of executing commands and performing fundamental system operations effectively. It is designed to be cross-platform, supporting both Windows and Unix Based environments.",
+		tags: [
+			{
+				name: "C++ 11",
+				color: style.cpp,
+			},
+			{
+				name: "Csharp",
+				color: style.csharp,
+			},
+		],
+		image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AWindows_Terminal_logo.svg&psig=AOvVaw1eu3RxxyfBCpsI5J3p8qkG&ust=1748202204217000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCihO3uvI0DFQAAAAAdAAAAABAE",
+		link: "https://github.com/Bless-04/Operating-System-Shell",
+	},
+    */
+];
+//#endregion
+
+//#region Services
+export interface Service {
+	title: string;
+	icon: string;
+}
+
+//#endregion
+
+//#region Testimonials
+export interface Testimonial {
 	testimonial: string;
 	name: string;
 	designation: string;
@@ -306,16 +357,4 @@ export interface ITestimonial {
 	image: string;
 }
 
-export interface IProject {
-	name: string;
-	description: string;
-	tags: ITag[];
-	image: string;
-	source_code_link: string;
-}
-
-export interface ITag {
-	name: string;
-	color: string;
-}
 //#endregion

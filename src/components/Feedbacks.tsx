@@ -4,12 +4,20 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Testimonials } from "./data";
+import { testimonials, Testimonial } from "./data";
 
-const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
+const FeedbackCard = ({
+	index,
+	testimonial,
+	name,
+	designation,
+	company,
+	image,
+}: Testimonial & { index: number }) => (
 	<motion.div
 		variants={fadeIn("", "spring", index * 0.5, 0.75)}
-		className=" bg-primary p-10 rounded-3xl xs:w-[320px] w-full">
+		className=" bg-primary p-10 rounded-3xl xs:w-[320px] w-full"
+	>
 		<p className="text-white font-black text-[48px]">"</p>
 
 		<div className="mt-1">
@@ -45,7 +53,7 @@ const Feedbacks = () => {
 				</motion.div>
 			</div>
 			<div className={`-mt-20 bg-tertiary pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-				{Testimonials.map((testimonial, index) => (
+				{testimonials.map((testimonial, index) => (
 					<FeedbackCard key={testimonial.name} index={index} {...testimonial} />
 				))}
 			</div>
