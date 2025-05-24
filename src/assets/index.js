@@ -26,7 +26,7 @@ export { default as tailwind } from './tech/tailwind.png';
 export { default as typescript } from './tech/typescript.png';
 export { default as threejs } from './tech/threejs.png';
 export { default as winforms } from './tech/winforms.png'
-export { default as avalonia } from './tech/avalonia.ico'
+export { default as avalonia } from './tech/avalonia.png'
 export { default as xunit } from './tech/Xunit.png'
 export { default as nunit } from './tech/nunit.svg'
 export { default as junit } from './tech/Junit.png'
@@ -38,6 +38,8 @@ export { default as framermotion } from './tech/framer-motion.svg'
 export { default as postgreSQL } from './tech/PostgreSQL.png'
 export { default as EFCore } from './tech/EF Core.png'
 export { default as mongoose } from './tech/mongoose.png'
+export { default as xaml } from './tech/XAML.png'
+export { default as xaml2 } from './tech/XAML2.png'
 // Company
 
 // Projects

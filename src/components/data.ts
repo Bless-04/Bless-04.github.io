@@ -27,6 +27,8 @@ import {
 	postgreSQL,
 	mongoose,
 	EFCore,
+	xaml,
+	xaml2,
 } from "../assets";
 
 /** Navigation Bar */
@@ -53,11 +55,11 @@ export const services: Service[] = [
 	},
 	{
 		title: "Desktop App Developer",
-		icon: avalonia,
+		icon: xaml2,
 	},
 	{
 		title: "Full Stack Developer",
-		icon: typescript,
+		icon: dotnetCORE,
 	},
 ];
 
@@ -129,7 +131,7 @@ technologies["Frontend Frameworks"] = [
 	},
 	{
 		name: "Windows Presentation Foundation (WPF)",
-		icon: dotnet,
+		icon: xaml,
 		link: "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-9.0",
 	},
 	{
