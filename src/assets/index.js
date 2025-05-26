@@ -40,6 +40,7 @@ export { default as EFCore } from './tech/EF Core.png'
 export { default as mongoose } from './tech/mongoose.png'
 export { default as xaml } from './tech/XAML.png'
 export { default as xaml2 } from './tech/XAML2.png'
+export { default as subversion } from './tech/Subversion.webp'
 // Company
 
 // Projects

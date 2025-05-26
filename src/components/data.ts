@@ -29,6 +29,7 @@ import {
 	EFCore,
 	xaml,
 	xaml2,
+	subversion,
 } from "../assets";
 
 /** Navigation Bar */
@@ -219,6 +220,11 @@ technologies.Tools = [
 		name: "Git",
 		icon: git,
 		link: "https://git-scm.com/",
+	},
+	{
+		name: "Subversion (SVN)",
+		icon: subversion,
+		link: "https://subversion.apache.org/",
 	},
 ];
 
