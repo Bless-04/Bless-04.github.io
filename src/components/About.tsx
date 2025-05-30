@@ -35,9 +35,10 @@ const About = () => (
 			variants={fadeIn("", "", 0.1, 1)}
 			className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 		>
-			Hello. I am Blessing Abumere. I am an aspiring software engineer that primarily specializes in the
-			programming languages C#, Java and Typescript. I am currently pursuing a degree in
-			Computer Science at Towson University with an expected graduation year of 2026.
+			Hello. I am Blessing Abumere. I am an aspiring software engineer that primarily
+			specializes in the programming languages C#, Java and Typescript. I am currently
+			pursuing a degree in Computer Science at Towson University with an expected graduation
+			year of 2026.
 		</motion.p>
 		<motion.div variants={fadeIn("", "", 0.5, 2)} className="flex mt-20 flex-wrap gap-10">
 			<Link to="mailto:babumere04@gmail.com" className="display: block">
