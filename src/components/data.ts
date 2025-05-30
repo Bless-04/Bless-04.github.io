@@ -30,6 +30,7 @@ import {
 	xaml,
 	xaml2,
 	subversion,
+	towson,
 } from "../assets";
 
 /** Navigation Bar */
@@ -48,23 +49,7 @@ export const navLinks = [
 	},
 ];
 
-/** Square thing content under about me */
-export const services: Service[] = [
-	{
-		title: "Web Developer",
-		icon: html,
-	},
-	{
-		title: "Desktop App Developer",
-		icon: xaml2,
-	},
-	{
-		title: "Full Stack Developer",
-		icon: dotnetCORE,
-	},
-];
-
-//#region technologies
+//#region Technologies
 
 export interface Technology {
 	name: string;
@@ -285,23 +270,23 @@ export interface Experience {
 	date: string;
 	points: string[];
 }
-export const experiences: Experience[] = [];
+export const experiences: Experience[] = [
+	{
+		title: "Flashlearn",
+		company_name: "Towson University",
+		icon: towson,
+		iconBg: "#ffffff",
+		date: "2025",
+		points: [
+			"Contributed to the development of the backend of a group project web application using mongodb and express.js",
+		],
+	},
+];
 
 //#endregion
 
 //#region Testimonials
-export const testimonials: Testimonial[] = [
-	/* for test
-	{
-		testimonial:
-
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
-	}, */
-];
+export const testimonials: Testimonial[] = [];
 
 //#endregion
 
@@ -353,6 +338,22 @@ export interface Service {
 	title: string;
 	icon: string;
 }
+
+/** Square thing content under about me */
+export const services: Service[] = [
+	{
+		title: "Web Developer",
+		icon: html,
+	},
+	{
+		title: "Desktop App Developer",
+		icon: xaml2,
+	},
+	{
+		title: "Full Stack Developer",
+		icon: dotnetCORE,
+	},
+];
 
 //#endregion
 
