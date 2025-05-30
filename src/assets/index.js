@@ -8,7 +8,7 @@ export { default as close } from './close.svg';
 export { default as linkedin } from './linkedin.svg';
 export { default as instagram } from './instagram.svg'
 
-//Tech
+///#region Tech
 export { default as cpp } from './tech/cpp.png';
 export { default as c } from './tech/c.png';
 export { default as csharp } from './tech/csharp.png';
@@ -41,6 +41,9 @@ export { default as mongoose } from './tech/mongoose.png'
 export { default as xaml } from './tech/XAML.png'
 export { default as xaml2 } from './tech/XAML2.png'
 export { default as subversion } from './tech/Subversion.webp'
-// Company
+//#endregion
 
+//#region Company
+export { default as towson } from './company/towson.png';
+//#endregion
 // Projects
