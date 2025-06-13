@@ -308,7 +308,7 @@ export const experiences: Experience[] = [
 		iconBg: style.white,
 		date: "May 2025",
 		points: [
-			"Contributed to the development of the backend of a web application using mongodb and express.js",
+			"Contributed to the development for the backend of a web application using mongodb and express.js.",
 		],
 	},
 	{
@@ -318,7 +318,7 @@ export const experiences: Experience[] = [
 		date: "May 2025",
 		iconBg: style.white,
 		points: [
-			"Led the development of the backend of a web application using postgreSQL and ASP.NET within a three-week timeframe",
+			"Led the development for the backend of a web application using postgreSQL and ASP.NET within a three-week timeframe",
 			"Implemented user authentication and authorization using Firebase, ensuring secure access to application features.",
 		],
 	},
@@ -363,7 +363,7 @@ export const projects: Project[] = [
 
 	{
 		name: "Roblox_Sharp",
-		description: "An unofficial C# asynchronouse wrapper library for Roblox's Web API system.",
+		description: "An unofficial C# asynchronous wrapper library for Roblox's Web API system.",
 		tags: [{ name: "C#", color: style.csharp }],
 		image: roblox_sharp,
 		link: "https://github.com/Bless-04/Roblox_Sharp/tree/main",
