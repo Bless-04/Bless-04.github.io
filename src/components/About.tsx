@@ -42,7 +42,8 @@ const About = () => (
 			in Computer Science at Towson University with an expected graduation year of 2026.{" "}
 			<br /> I am comfortable with Java, C++, and TypeScript, and have used each in academic
 			coursework but I am most proficient in C#, as it is my favorite language and my go-to
-			for learning new concepts and building personal projects. <br />
+			for creating self-directed projects and mastering concepts beyond the classroom.
+			<br />
 			I'm always open to new opportunities and collaborations!
 		</motion.p>
 		<motion.div variants={fadeIn("", "", 0.5, 2)} className="flex mt-20 flex-wrap gap-10">
