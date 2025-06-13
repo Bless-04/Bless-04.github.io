@@ -318,7 +318,7 @@ export const experiences: Experience[] = [
 		date: "May 2025",
 		iconBg: style.white,
 		points: [
-			"Led the development for the backend of a web application using postgreSQL and ASP.NET within a three-week timeframe",
+			"Led the development for the backend of a web application using PostgreSQL and ASP.NET within a three-week timeframe",
 			"Implemented user authentication and authorization using Firebase, ensuring secure access to application features.",
 		],
 	},
