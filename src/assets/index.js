@@ -41,6 +41,7 @@ export { default as mongoose } from './tech/mongoose.png'
 export { default as xaml } from './tech/XAML.png'
 export { default as xaml2 } from './tech/XAML2.png'
 export { default as subversion } from './tech/Subversion.webp'
+export { default as postman } from './tech/postman.png'
 //#endregion
 
 //#region Company
