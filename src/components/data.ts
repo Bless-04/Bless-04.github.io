@@ -194,7 +194,7 @@ technologies.Libraries = [
 		link: "https://mongoosejs.com/",
 	},
 	{
-		name: "Lepoco WPF UI",
+		name: "Lepo.co WPF UI",
 		icon: lepoco_wpfui,
 		link: "https://wpfui.lepo.co/",
 	},
