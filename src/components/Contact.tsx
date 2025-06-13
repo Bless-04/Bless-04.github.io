@@ -63,7 +63,7 @@ function Contact() {
 							name="email"
 							value={form.email}
 							onChange={handleChange}
-							placeholder="Web Address?"
+							placeholder="Email Address?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>

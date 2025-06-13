@@ -42,6 +42,8 @@ export { default as xaml } from './tech/XAML.png'
 export { default as xaml2 } from './tech/XAML2.png'
 export { default as subversion } from './tech/Subversion.webp'
 export { default as postman } from './tech/postman.png'
+export { default as lepoco_wpfui } from './tech/lepoco.wpfui.png'
+export { default as vmware } from './tech/vmware.png'
 //#endregion
 
 //#region Company

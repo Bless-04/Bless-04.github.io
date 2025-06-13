@@ -31,7 +31,21 @@ import {
 	xaml2,
 	subversion,
 	towson,
+	postman,
+	roblox_sharp,
+	lepoco_wpfui,
+	vmware,
 } from "../assets";
+
+/**
+ * @link src\index.css
+ * @notes colors that are used multiple times
+ */
+const style = {
+	white: "#ffffff",
+	cpp: "#2f80ed",
+	csharp: "#8711ba",
+};
 
 /** Navigation Bar */
 export const navLinks = [
@@ -179,6 +193,11 @@ technologies.Libraries = [
 		icon: mongoose,
 		link: "https://mongoosejs.com/",
 	},
+	{
+		name: "Lepoco WPF UI",
+		icon: lepoco_wpfui,
+		link: "https://wpfui.lepo.co/",
+	},
 ];
 
 technologies.Runtimes = [
@@ -210,6 +229,16 @@ technologies.Tools = [
 		name: "Subversion (SVN)",
 		icon: subversion,
 		link: "https://subversion.apache.org/",
+	},
+	{
+		name: "Postman",
+		icon: postman,
+		link: "https://www.postman.com/",
+	},
+	{
+		name: "VMware Workstation",
+		icon: vmware,
+		link: "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion",
 	},
 ];
 
@@ -270,15 +299,27 @@ export interface Experience {
 	date: string;
 	points: string[];
 }
+
 export const experiences: Experience[] = [
 	{
 		title: "Flashlearn",
 		company_name: "Towson University",
 		icon: towson,
-		iconBg: "#ffffff",
-		date: "2025",
+		iconBg: style.white,
+		date: "May 2025",
 		points: [
-			"Contributed to the development of the backend of a group project web application using mongodb and express.js",
+			"Contributed to the development of the backend of a web application using mongodb and express.js",
+		],
+	},
+	{
+		title: "Comparison Tool",
+		company_name: "Towson University",
+		icon: towson,
+		date: "May 2025",
+		iconBg: style.white,
+		points: [
+			"Led the development of the backend of a web application using postgreSQL and ASP.NET within a three-week timeframe",
+			"Implemented user authentication and authorization using Firebase, ensuring secure access to application features.",
 		],
 	},
 ];
@@ -305,31 +346,28 @@ export interface Tag {
 	color: string;
 }
 
-/** @link  src\index.css */
-const style = {
-	cpp: "#2f80ed",
-	csharp: "red-text-gradient",
-};
 export const projects: Project[] = [
-	/*
 	{
 		name: "Cross Platform Shell",
 		description:
 			"An operating system shell capable of executing commands and performing fundamental system operations effectively. It is designed to be cross-platform, supporting both Windows and Unix Based environments.",
 		tags: [
 			{
-				name: "C++ 11",
+				name: "C++",
 				color: style.cpp,
 			},
-			{
-				name: "Csharp",
-				color: style.csharp,
-			},
 		],
-		image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AWindows_Terminal_logo.svg&psig=AOvVaw1eu3RxxyfBCpsI5J3p8qkG&ust=1748202204217000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCihO3uvI0DFQAAAAAdAAAAABAE",
+		image: towson,
 		link: "https://github.com/Bless-04/Operating-System-Shell",
 	},
-    */
+
+	{
+		name: "Roblox_Sharp",
+		description: "An unofficial C# asynchronouse wrapper library for Roblox's Web API system.",
+		tags: [{ name: "C#", color: style.csharp }],
+		image: roblox_sharp,
+		link: "https://github.com/Bless-04/Roblox_Sharp/tree/main",
+	},
 ];
 //#endregion
 
