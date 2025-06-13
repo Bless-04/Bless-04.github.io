@@ -364,7 +364,7 @@ export const projects: Project[] = [
 	{
 		name: "Roblox_Sharp",
 		description: "An unofficial C# asynchronous wrapper library for Roblox's Web API system.",
-		tags: [{ name: "C#", color: style.csharp }],
+		tags: [{ name: "C-Sharp", color: style.csharp }],
 		image: roblox_sharp,
 		link: "https://github.com/Bless-04/Roblox_Sharp/tree/main",
 	},
