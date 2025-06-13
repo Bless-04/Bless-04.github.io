@@ -19,8 +19,8 @@ const Hello = () => (
 					Hello, I'm <span className="text-[#6b1313]">Blessing</span>
 				</h1>
 				<p className={`${styles.helloSubText} mt-2 text-white-100`}>
-					I develop Desktop Apps, user interfaces <br className="sm:block hidden" />
-					and web applications
+					I develop Desktop Apps, User interfaces <br className="sm:block hidden" />
+					and Web applications
 				</p>
 			</div>
 		</div>
