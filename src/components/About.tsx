@@ -40,7 +40,7 @@ const About = () => (
 		>
 			Hello. I am Blessing Abumere. <br />I am an aspiring software engineer pursuing a B.S.
 			in Computer Science at Towson University with an expected graduation year of 2026.{" "}
-			<br /> I am comfortable with Java, C++, and TypeScript, and have used each in academic
+			<br /> I am very comfortable with Java, C++, and TypeScript, and have used each in academic
 			coursework but I am most proficient in C#, as it is my favorite language and my go-to
 			for creating self-directed projects and mastering concepts beyond the classroom.
 			<br />
