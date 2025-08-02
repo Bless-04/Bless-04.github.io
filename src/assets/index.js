@@ -44,6 +44,7 @@ export { default as subversion } from './tech/Subversion.webp'
 export { default as postman } from './tech/postman.png'
 export { default as lepoco_wpfui } from './tech/lepoco.wpfui.png'
 export { default as vmware } from './tech/vmware.png'
+export { default as spring } from './tech/Spring.png'
 //#endregion
 
 //#region Company

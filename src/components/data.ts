@@ -35,6 +35,7 @@ import {
 	roblox_sharp,
 	lepoco_wpfui,
 	vmware,
+	spring,
 } from "../assets";
 
 /**
@@ -159,6 +160,11 @@ technologies["Backend Frameworks"] = [
 		name: "ASP.NET Core",
 		icon: ASPdotnet,
 		link: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps",
+	},
+	{
+		name: "Spring Boot",
+		icon: spring,
+		link: "https://spring.io/projects/spring-boot",
 	},
 	{
 		name: "Express JS",
