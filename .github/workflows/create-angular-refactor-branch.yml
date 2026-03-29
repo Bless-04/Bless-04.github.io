@@ -1,0 +1,28 @@
+name: Create angular-refactor branch
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - 'copilot/angular-refactor'
+
+jobs:
+    create-branch:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  ref: main
+                  fetch-depth: 0
+            - name: Create angular-refactor branch from main
+              run: |
+                  git fetch origin
+                  if git ls-remote --exit-code --heads origin angular-refactor; then
+                    echo "Branch 'angular-refactor' already exists on remote."
+                  else
+                    git checkout -b angular-refactor origin/main
+                    git push origin angular-refactor
+                    echo "Branch 'angular-refactor' created successfully."
+                  fi
