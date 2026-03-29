@@ -3,6 +3,8 @@ name: Create angular-refactor branch
 on:
     workflow_dispatch:
     push:
+        # Trigger on the Copilot agent working branch so the angular-refactor
+        # branch is created automatically when this PR is pushed.
         branches:
             - 'copilot/angular-refactor'
 
