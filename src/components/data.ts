@@ -155,6 +155,16 @@ technologies["Backend Frameworks"] = [
 
 technologies.Libraries = [
 	{
+		name: "Retrofit",
+		icon: tech.retrofit,
+		link: "https://square.github.io/retrofit/",
+	},
+	{
+		name: "Hilt",
+		icon: tech.compose,
+		link: "https://dagger.dev/hilt/",
+	},
+	{
 		name: "React JS",
 		icon: tech.reactjs,
 		link: "https://reactjs.org/",
