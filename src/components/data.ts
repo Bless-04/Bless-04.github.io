@@ -161,7 +161,7 @@ technologies.Libraries = [
 	},
 	{
 		name: "Hilt",
-		icon: tech.compose,
+		icon: tech.hilt,
 		link: "https://dagger.dev/hilt/",
 	},
 	{
