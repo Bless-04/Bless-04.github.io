@@ -3,6 +3,8 @@ import c from './c.png';
 import csharp from './csharp.png';
 import css from './css.png';
 import compose from "./compose.png";
+import retrofit from './Retrofit.png';
+//import hilt from './Hilt.png';
 import dotnet from './dotnet.svg';
 import docker from './docker.png';
 import git from './git.png';
@@ -48,6 +50,7 @@ export const tech = {
     dotnet,
     docker,
     kotlin,
+    //  hilt, couldnt find a good logo for hilt
     git,
     html,
     sqlite,
@@ -56,6 +59,7 @@ export const tech = {
     javascript,
     mongodb,
     nodejs,
+    retrofit,
     rust,
     reactjs,
     tailwind,
