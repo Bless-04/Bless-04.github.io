@@ -155,6 +155,11 @@ technologies["Backend Frameworks"] = [
 
 technologies.Libraries = [
 	{
+		name: "Lepo.co WPF UI",
+		icon: tech.lepoco_wpfui,
+		link: "https://wpfui.lepo.co/",
+	},
+	{
 		name: "Retrofit",
 		icon: tech.retrofit,
 		link: "https://square.github.io/retrofit/",
@@ -188,11 +193,6 @@ technologies.Libraries = [
 		name: "Mongoose",
 		icon: tech.mongoose,
 		link: "https://mongoosejs.com/",
-	},
-	{
-		name: "Lepo.co WPF UI",
-		icon: tech.lepoco_wpfui,
-		link: "https://wpfui.lepo.co/",
 	},
 ];
 
