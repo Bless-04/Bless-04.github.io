@@ -303,9 +303,7 @@ export const experiences: Experience[] = [
 		icon: company.towson,
 		iconBg: style.white,
 		date: "May 2025",
-		points: [
-			"Contributed to the development for the backend of a web application using mongodb and express.js.",
-		],
+		points: ["Co-Engineered the backend of a web application using mongodb and express.js."],
 	},
 	{
 		title: "Comparison Tool",
