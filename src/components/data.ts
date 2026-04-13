@@ -165,7 +165,7 @@ technologies.Libraries = [
 		link: "https://square.github.io/retrofit/",
 	},
 	{
-		name: "Hilt",
+		name: "Hilt DI",
 		icon: tech.hilt,
 		link: "https://dagger.dev/hilt/",
 	},
@@ -355,16 +355,10 @@ export const projects: Project[] = [
 		name: "Cross Platform Shell",
 		description:
 			"An operating system shell capable of executing commands and performing fundamental system operations effectively. It is designed to be cross-platform, supporting both Windows and Unix Based environments.",
-		tags: [
-			{
-				name: "C++",
-				color: style.cpp,
-			},
-		],
+		tags: [{ name: "C++", color: style.cpp }],
 		image: company.towson,
 		link: "https://github.com/Bless-04/Operating-System-Shell",
 	},
-
 	{
 		name: "Roblox_Sharp",
 		description: "An unofficial C# asynchronous wrapper library for Roblox's Web API system.",
