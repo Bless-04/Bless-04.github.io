@@ -15,7 +15,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Build Portfolio
-              run: npm install --force && npm exec vite build # this installs vite and generates the three.js files
+              run: npm install --force && npm exec vite build #  installs vite and generates the three.js files
             - name: Deploy Portfolio
               uses: rayluo/github-pages-overwriter@v1.3
 

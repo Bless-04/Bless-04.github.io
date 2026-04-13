@@ -86,7 +86,7 @@ technologies.Languages = [
 		icon: tech.rust,
 		link: "https://www.rust-lang.org/learn",
 	},
-	/* typescript implies knowledge of javascript + space
+	/* typescript implies knowledge of javascript
     {
 		name: "JavaScript",
 		icon: tech.javascript,
