@@ -1,5 +1,5 @@
 // General?
-export { default as resume } from './Blessing Abumere resume.pdf';
+export { default as resume } from './Resume.pdf';
 export { default as gmail } from './gmail.svg';
 export { default as favicon } from './favicon.jpeg';
 export { default as github } from './github.png';
