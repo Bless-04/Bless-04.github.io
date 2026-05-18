@@ -11,7 +11,7 @@ jobs:
             cancel-in-progress: true
         permissions:
             contents: write
-        runs-on: macOS-latest #using windows fixed the permissions error
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v6
             - name: Build Portfolio
@@ -21,3 +21,4 @@ jobs:
               with:
                   folder: dist # directory with index.html and other files to deploy
                   branch: deployment # branch that deploys it
+                  commit-message: "Deploying Portfolio" # commit message for deployment
