@@ -13,7 +13,7 @@ jobs:
             contents: write
         runs-on: macOS-latest #using windows fixed the permissions error
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
             - name: Build Portfolio
               run: npm ci --force && npm exec vite build #  installs vite and generates the three.js files
             - name: Deploy Portfolio
