@@ -7,7 +7,7 @@ export { default as menu } from './menu.svg';
 export { default as linkedin } from './linkedin.svg';
 export { default as instagram } from './instagram.svg'
 export { default as roblox_sharp } from './roblox_sharp.png'
-export { default as cve_scout } from './cve_scout.png'
+export { default as cve_scout } from './Cve_Scout.png'
 
 ///#region Tech
 

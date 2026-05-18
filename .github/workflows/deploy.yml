@@ -11,7 +11,7 @@ jobs:
             cancel-in-progress: true
         permissions:
             contents: write
-        runs-on: windows-latest #ubuntu would require all assets to be lowercase
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v6
             - name: Build Portfolio
