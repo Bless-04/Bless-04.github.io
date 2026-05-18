@@ -17,7 +17,7 @@ jobs:
             - name: Build Portfolio
               run: npm ci --force && npm exec vite build #  installs vite and generates the three.js files
             - name: Deploy Portfolio
-              uses: rayluo/github-pages-overwriter@v1.3
+              uses: JamesIves/github-pages-deploy-action@v4
               with:
-                  source-directory: dist # where the source three.js generates files are - FINALLY WORKED AFTER CHANGING ./dist to JUST dist
-                  target-branch: deployment # branch that deploys it
+                  folder: dist # directory with index.html and other files to deploy
+                  branch: deployment # branch that deploys it
