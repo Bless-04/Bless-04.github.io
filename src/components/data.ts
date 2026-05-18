@@ -1,6 +1,6 @@
 import { tech } from "../assets/tech";
 import { company } from "../assets/company";
-import { github, roblox_sharp } from "../assets";
+import { cve_scout, github, roblox_sharp } from "../assets";
 
 /**
  * @link src\index.css
@@ -10,6 +10,9 @@ const style = {
 	white: "#ffffff",
 	cpp: "#2f80ed",
 	csharp: "#8711ba",
+	kotlin: "#7F52FF",
+	compose: "#3DDC84",
+	rust: "#dea584",
 };
 
 /** Navigation Bar */
@@ -351,6 +354,19 @@ export interface Tag {
 }
 
 export const projects: Project[] = [
+	{
+		name: "CVE Scout",
+		description:
+			"CVE Scout is a security tool that leverages the NIST National Vulnerability Database (NVD) to provide real-time alerts on security threats based on user-defined severity policies.",
+		tags: [
+			{ name: "Kotlin", color: style.kotlin },
+			{ name: "Jetpack Compose", color: style.compose },
+			{ name: "Retrofit", color: "white" },
+			{ name: "Hilt DI", color: "white" },
+		],
+		image: cve_scout,
+		link: "https://github.com/Bless-04/CVE-Scout-Android",
+	},
 	{
 		name: "Cross Platform Shell",
 		description:
