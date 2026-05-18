@@ -15,10 +15,10 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: Build Portfolio
-              run: npm install --force && npm exec vite build #  installs vite and generates the three.js files
+              run: npm ci --force && npm exec vite build #  installs vite and generates the three.js files
             - name: Deploy Portfolio
               uses: rayluo/github-pages-overwriter@v1.3
-
+              continue-on-error: true
               with:
                   source-directory: dist # where the source three.js generates files are - FINALLY WORKED AFTER CHANGING ./dist to JUST dist
                   target-branch: deployment # branch that deploys it

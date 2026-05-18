@@ -70,7 +70,7 @@ const About = () => (
 			<Link to={resume} target="_blank" rel="noreferrer">
 				<button className="btn w-fit bg-tertiary text-white px-7 py-2 rounded-md overflow-hidden relative cursor-pointer">
 					<span className="inline-flex items-center gap-2">
-						Resume
+						View Resume
 						<svg
 							aria-hidden="true"
 							focusable="false"
