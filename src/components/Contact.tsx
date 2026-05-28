@@ -52,7 +52,7 @@ function Contact() {
 							name="name"
 							value={form.name}
 							onChange={handleChange}
-							placeholder="Name?"
+							placeholder="Enter Your Name"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -63,7 +63,7 @@ function Contact() {
 							name="email"
 							value={form.email}
 							onChange={handleChange}
-							placeholder="Email Address?"
+							placeholder="Enter your email address"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -74,7 +74,7 @@ function Contact() {
 							name="message"
 							value={form.message}
 							onChange={handleChange}
-							placeholder="Email Content?"
+							placeholder="What would you like to say?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
